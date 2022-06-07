@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Cruel Pip-Nado — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        .dark table, table {
+            margin: 1em auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Cruel Pip-Nado</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Cruel Pip-Nado.svg" class="diagram">
+                <h2>On the Subject of Cruel Pip-Nado</h2>
+                <p class="flavour-text">I woke up to a different world of NATO alphabet. I don't remember- Wait... Who am I?</p>
+
+                <p>The module consists of a timer display on the top left, a tophat, a main display in the center, three single digit displays, and three buttons at the bottom.</p>
+                <p>Each button doesn't do anything before the module is initialized. However, once the module is initialized, each button can be pressed to increase each value from 0-9, wrapping back to 0 if it exceeds 9.</p>
+                <p>When you start the module, you have 90 seconds to calculate values of each length of the word from the main display, and submit your answer.</p>
+                <p>If the answer is submitted correctly, then the module will solve. However, if the answer is incorrect, or the timer runs out, the module will strike and reset.</p>
+                <h3>Determining the Offset</h3>
+                <p>Concatenate the first and last digits of the serial number and multiply by the number of modules on the bomb.</p>
+                <ul>
+                <li>If the current offset is even at this point, divide the number by 2, keeping only the integer.</li>
+                <li>Otherwise, multiply by the number by 2.</li>
+                </ul>                
+                <p>Then, multiply the current offset by the sum of the number of indicators, ports, and port plates. If there are none, leave the current offset as is.</p>
+                <ul>
+                <li>If the alphabetical position of the first letter in the serial number (A0Z25) is greater than the sum of all digits in the serial number, add the number of vowels in the serial number to the current offset.</li>
+                <li>Otherwise, add the number of consonants in the serial number to the current offset.</li>
+                </ul>
+                <p>Finally, modulo the current offset by 100. This will be your final offset.</p>
+                <h3>Initializing the module</h3>
+                <p>To initialize the module, press the top hat. By doing so, a sequence of words that form a word in regular NATO alphabet will appear and the 90 second timer will begin counting down. The three single digit displays will appear as random numbers. Concatenate the single digit displays together as this will be your initial number.</p>
+                <p>Determine the lengths of each word in the table below.</p> 
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 3</div>
+        </div>
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Cruel Pip-Nado</span>
+            </div>
+            <div class="page-content">
+            <h3>Calculating the Final Number</h3>
+            <p>To obtain the final number, first multiply the initial number by the alphabetical position (A0Z25) of the first letter of the first word. If the alphabetical position is 0, leave the initial number as is.</p>
+            <p>Take the sum of the lengths of each word in the Pip-Nado alphabet and the current number, and multiply the sum by the offset. Then modulo the result by 1000.</p>
+            <ul>
+            <li>If there is a letter in the serial number associated with the word "PIPPY", reverse the current number.</li>
+            <li>Otherwise, leave the current number as is.</li>
+            </ul>
+            <h3>Submission</h3>
+            <p>To submit an answer, press the three buttons to display the final answer, then press the top hat to submit.</p>
+            </div>
+            <div class="page-footer relative-footer">Page 2 of 3</div>
+        </div>
+                <div class="page page-bg-03">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Cruel Pip-Nado</span>
+                
+            </div>
+            <div class="page-content">
+            <h3>Regular NATO and Pip-Nado Alphabet</h3>
+                <table>
+                <tr>
+                    <th>Regular NATO</th>
+                    <th>Pip-Nado</th>
+                    <tr><th>Alpha</th><th>Alpha</th></tr>
+                    <tr><th>Bravo</th><th>Beta</th></tr>
+                    <tr><th>Charlie</th><th>Crab</th></tr>
+                    <tr><th>Delta</th><th>D---</th></tr>
+                    <tr><th>Echo</th><th>Echo</th></tr>
+                    <tr><th>Foxtrot</th><th>F---</th></tr>
+                    <tr><th>Golf</th><th>Glubbers_</th></tr>
+                    <tr><th>Hotel</th><th>Hotel</th></tr>
+                    <tr><th>India</th><th>Igloo</th></tr>
+                    <tr><th>Juliet</th><th>J</th></tr>
+                    <tr><th>Kilo</th><th>Kilogram</th></tr>
+                    <tr><th>Lima</th><th>Lemon</th></tr>
+                    <tr><th>Mike</th><th>Margherita</th>
+                    <tr><th>November</th><th>Nostril</th>
+                    <tr><th>Oscar</th><th>Octopuuus</th></tr>
+                    <tr><th>Papa</th><th>Pogger</th></tr>
+                    <tr><th>Quebec</th><th>Quack!</th></tr>
+                    <tr><th>Romeo</th><th>Ronald Reagan</th></tr>
+                    <tr><th>Sierra</th><th>Sunscreen</th></tr>
+                    <tr><th>Tango</th><th>Terraforming</th></tr>
+                    <tr><th>Uniform</th><th>Umbrella</th></tr>
+                    <tr><th>Victor</th><th>Vi-o-lin</th></tr>
+                    <tr><th>Whiskey</th><th>Wisconsin</th></tr>
+                    <tr><th>X-Ray</th><th>Xbox</th></tr>
+                    <tr><th>Yankee</th><th>YEET</th></tr>
+                    <tr><th>Zulu</th><th>Zuckerburg</th></tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">Page 3 of 3</div>           
+        </div>
+    </div>
+</body>
+</html>
