@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b92bd10e73a84424d94d930cd443992a
+guid: ef6ce25344123044c8a168636b04608f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Royal Acid
+  fontName: Milky Coffee
   fontNames:
-  - Royal Acid
+  - Milky Coffee
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

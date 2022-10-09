@@ -19,6 +19,6 @@ MonoBehaviour:
 
 
     Calculate the lengths of each word in a 90 second time limit.'
-  version: 1.0
+  version: 2.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 6219b14b84fe16e4e95308c8b11e6416, type: 3}
